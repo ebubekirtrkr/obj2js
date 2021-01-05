@@ -15,7 +15,7 @@ arg_parser.add_argument('output',
 args = arg_parser.parse_args()
 
 input_file = open(f"{args.input}", "r")
-output_file = open("output.js", "w+")
+output_file = open(f"{args.output}", "w+")
 
 
 vertices = "var vertices = [\n"  # from v lines
